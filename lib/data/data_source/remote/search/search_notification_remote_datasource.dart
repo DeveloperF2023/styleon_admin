@@ -1,0 +1,12 @@
+import '../../../../core/class/crud.dart';
+import '../../../../core/constants/api_constants.dart';
+
+
+class SearchNotificationRemoteDataSource{
+  CRUD crud;
+  SearchNotificationRemoteDataSource(this.crud);
+  searchNotification(String search)async{
+    var response = await crud.postData(ApiConstants.SEARCH_NOTIFICATION_URL, {"search":search});
+    return response.fold((l) => l, (r) => r);
+  }
+}
