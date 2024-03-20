@@ -1,6 +1,6 @@
 # admin
 
-A new Flutter project.
+The administrator's application for easy and perfect management of all functions
 
 ## Getting Started
 
